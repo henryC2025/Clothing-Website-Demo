@@ -1,0 +1,129 @@
+﻿body {
+    background-color: white;
+}
+
+#navigation {
+    font-family: 'Bradley Hand ITC';
+    font-size: 25px;
+}
+
+#tabs {
+    text-align: center;
+    list-style: none;
+}
+
+    #tabs ul {
+        display: none;
+        list-style: none;
+    }
+
+    #tabs li {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 0px 15px 0px 15px;
+    }
+
+    #tabs a {
+        display: block;
+        color: #000000;
+        text-decoration: none;
+    }
+
+        #tabs a:hover {
+            color: #00ff90;
+        }
+
+#content {
+    padding: 25px;
+    min-height: 450px;
+}
+
+h1 {
+    font-family: Pristina;
+    font-weight: bold;
+    font-size: 50px;
+    color: #000000;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Bradley Hand ITC';
+    font-weight: bold;
+    font-size: large;
+    color: #000000;
+    text-align: center;
+}
+
+p {
+    font-family: 'Bradley Hand ITC';
+    font-size: 20px;
+    color: black;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    height: 10%;
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color: #000000;
+}
+
+    a:visited {
+        color: #000000;
+    }
+
+    a:hover {
+        color: #00ff90;
+    }
+
+table {
+    font-family: 'Bradley Hand ITC';
+    text-align: center;
+    font-size: 20px;
+}
+
+Button {
+    color: black;
+    background: #ff0000;
+    font-family: 'Bradley Hand ITC';
+    
+}
+
+Button:hover 
+{
+    color: #00ff90;
+}
+
+.btn:hover {
+    color: #00ff90;
+    background: #000000;
+}
+
+div
+{
+    font-family: 'Bradley Hand ITC';
+}
+
+table
+{
+margin-right: auto;
+margin-left:auto; 
+border: 5px double #231f20; 
+background: white
+}
+
+.backImage {
+    background-image: url(/Images/waves.png);
+    background-size: 6000px;
+   
+}
+

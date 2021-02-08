@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.Master.cs" Inherits="IWDA.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>master</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script type="text/javascript" language="javascript">
+        function warningMessage() {
+
+            var message = confirm("Select 'OK' if you wish to empty basket!");
+            return message;
+        }
+        function confirmMessage() {
+
+            var message = confirm("Select 'OK' if you wish to confirm your order!");
+            return message;
+       }
+    </script>
+
+</head>
+
+    <body class="backImage">
+
+    <form id="form2" runat="server">
+  
+        <div>
+
+            <h1> 
+                <asp:HyperLink ID="hypHome" runat="server" NavigateUrl="~/home.aspx" style="text-decoration:none; color: #231f20;" CssClass="auto-style2">WATA</asp:HyperLink>
+            </h1>
+        </div>
+
+            <div id="navigation">
+            <ul id="tabs">
+                <li><asp:HyperLink ID="hypLatest" runat="server" NavigateUrl="~/latest.aspx" >LATEST</asp:HyperLink></li>
+                <li><asp:HyperLink ID="hypClothing" runat="server" NavigateUrl="~/clothing.aspx" >CLOTHING</asp:HyperLink></li>
+                <li><asp:HyperLink ID="hypContact" runat="server" NavigateUrl="~/contact.aspx" >CONTACT</asp:HyperLink></li>
+                <li><asp:HyperLink ID="hypAccount" runat="server" NavigateUrl="~/account.aspx" >ACCOUNT</asp:HyperLink></li>
+                <li><asp:HyperLink ID="hypBasket" runat="server" NavigateUrl="~/basket.aspx" >BASKET</asp:HyperLink></li>
+                <li><asp:HyperLink ID="hypMembers" runat="server" NavigateUrl="~/members/members.aspx" >MEMBERS</asp:HyperLink></li>
+                <li><asp:HyperLink ID="hypBoss" runat="server" NavigateUrl="~/management/boss.aspx" >ADMINISTRATOR</asp:HyperLink></li>
+            </ul>
+            </div>
+
+        <hr style="overflow: visible;
+         padding: 0;
+         border: 10px;
+         border-top: medium double #333;
+         color: #333;
+         text-align: center;" />
+
+        <div class="content">
+             
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+             
+            </asp:ContentPlaceHolder>
+
+        </div>
+
+    </form>
+</body>
+</html>
